@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./asset/css/style.css">
+    <title>velocimetro</title>
+</head>
+
+<body>
+
+    <head>
+        <h1>VELOCÍMETRO</h1>
+    </head>
+    <section>
+        <div id="pedais">
+            <div id="msgI">acelerador</div>
+            <button onmouseenter="accelerator()" onmouseout="stableSpeed()" id="accel">acelerador</button>
+            <div id="msgII">freio</div>
+            <button onmouseenter="breaking()" onmouseout="stableSpeed()" id="break">freio</button>
+        </div>
+        <div id="converter">
+            <button onclick="tokmHours()" id="km">KM/H</button>
+            <button onclick="tomilesHours()" id="mph">MPH</button>
+        </div>
+        <div id="cont-display">
+            <div id="displayKm">0</div>
+            <div id="displayMiles">0</div>
+        </div>
+        <div id="msgIII">NORMAL</div>
+
+    </section>
+    <script src="./asset/script/script.js"></script>
+</body>
+
+</html>
